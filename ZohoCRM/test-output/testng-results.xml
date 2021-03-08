@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20171" started-at="2021-03-08T17:17:09 IST" finished-at="2021-03-08T17:17:29 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20171" started-at="2021-03-08T17:17:09 IST" finished-at="2021-03-08T17:17:29 IST">
+      <class name="com.crm.zohocrm.testscripts.TC001">
+        <test-method status="PASS" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e]" name="openApp" is-config="true" duration-ms="6811" started-at="2021-03-08T17:17:09 IST" finished-at="2021-03-08T17:17:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.201.129:8080/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="loginToApp(java.lang.String,java.lang.String)[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e]" name="loginToApp" is-config="true" duration-ms="7010" started-at="2021-03-08T17:17:16 IST" finished-at="2021-03-08T17:17:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rashmi@dell.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method status="PASS" signature="testCampaignIsDisplayed()[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e]" name="testCampaignIsDisplayed" duration-ms="4230" started-at="2021-03-08T17:17:23 IST" description="To Create A Campain and Verify in Campaign Details Page" finished-at="2021-03-08T17:17:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCampaignIsDisplayed -->
+        <test-method status="PASS" signature="deleteCampaign()[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e]" name="deleteCampaign" is-config="true" duration-ms="141" started-at="2021-03-08T17:17:27 IST" finished-at="2021-03-08T17:17:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCampaign -->
+        <test-method status="PASS" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e]" name="logoutFromApp" is-config="true" duration-ms="1121" started-at="2021-03-08T17:17:27 IST" finished-at="2021-03-08T17:17:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCampaignIsDisplayed status=SUCCESS method=TC001.testCampaignIsDisplayed()[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.crm.zohocrm.testscripts.TC001@5891e32e]" name="closeApp" is-config="true" duration-ms="813" started-at="2021-03-08T17:17:29 IST" finished-at="2021-03-08T17:17:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.crm.zohocrm.testscripts.TC001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
