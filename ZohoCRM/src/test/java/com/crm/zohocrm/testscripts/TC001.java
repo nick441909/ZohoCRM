@@ -27,7 +27,7 @@ public class TC001 extends BaseTest {
 		campaignsListPage.createCampaign(campaignName);
 		
 		Assert.assertEquals(campaignsListPage.verifyCampaignDetailsTitle(),
-				true, "Campaigns Details Title is not displayed");
+				true, "Campaigns Details Title is not correct");
 		
 		homePage.clickOnNavTabLink(navTablink);
 		

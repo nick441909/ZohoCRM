@@ -69,7 +69,7 @@ public class WebActionUtil {
 	
 	public void selectByVisibleText(WebElement listboxElement,String text) {
 		Select select = new Select(listboxElement);
-		select.deselectByVisibleText(text);
+		select.selectByVisibleText(text);
 	}
 	
 	public void switchToFrame(String idNameOrIndex) {
