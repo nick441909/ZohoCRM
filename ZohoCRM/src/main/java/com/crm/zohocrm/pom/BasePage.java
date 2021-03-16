@@ -8,9 +8,13 @@ import com.crm.zohocrm.generic.WebActionUtil;
 public class BasePage {
 	public WebDriver driver;
 	public WebActionUtil webActionUtil;
+	public HomePage homePage;
+	
 	public BasePage(WebDriver driver, WebActionUtil webActionUtil) {
 		this.webActionUtil=webActionUtil;
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
 }

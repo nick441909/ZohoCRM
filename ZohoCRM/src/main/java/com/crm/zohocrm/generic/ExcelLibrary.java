@@ -79,7 +79,7 @@ public class ExcelLibrary {
 			Workbook workbook = WorkbookFactory.create(file);
 		   Sheet Sheet1 = workbook.getSheet(sheet);
 		   int rowcount = Sheet1.getPhysicalNumberOfRows();
-		   int cellcount = Sheet1.getRow(2).getPhysicalNumberOfCells();
+		   int cellcount = 2;
 		   String[][] sr=new String[rowcount][cellcount];
 		   for(int i=1,k=0;i<=rowcount-1;i++,k++) {
 			   for(int j=0;j<=cellcount-1;j++) {

@@ -4,6 +4,11 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.crm.zohocrm.testscripts.TC001"/>
+       <class name="com.crm.zohocrm.testscripts.TC002"/>
+        <class name="com.crm.zohocrm.testscripts.TC003"/>
+        
+          <class name="com.crm.zohocrm.testscripts.TC005"/>
+          
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

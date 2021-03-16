@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-11T20:46:30 IST" name="Default suite" finished-at="2021-03-11T20:46:42 IST" duration-ms="11789">
+  <suite started-at="2021-03-16T18:49:56 IST" name="Default suite" finished-at="2021-03-16T18:50:08 IST" duration-ms="11749">
     <groups>
     </groups>
-    <test started-at="2021-03-11T20:46:30 IST" name="Default test" finished-at="2021-03-11T20:46:42 IST" duration-ms="11789">
-      <class name="com.crm.zohocrm.testscripts.TC003">
-        <test-method is-config="true" signature="openApp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.zohocrm.testscripts.TC003@353d0772]" started-at="2021-03-11T20:46:30 IST" name="openApp" finished-at="2021-03-11T20:46:34 IST" duration-ms="3743" status="PASS">
+    <test started-at="2021-03-16T18:49:56 IST" name="Default test" finished-at="2021-03-16T18:50:08 IST" duration-ms="11749">
+      <class name="com.crm.zohocrm.testscripts.TC006">
+        <test-method is-config="true" signature="openApp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652]" started-at="2021-03-16T18:49:56 IST" name="openApp" finished-at="2021-03-16T18:49:59 IST" duration-ms="2491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method is-config="true" signature="loginToApp(java.lang.String, java.lang.String)[pri:0, instance:com.crm.zohocrm.testscripts.TC003@353d0772]" started-at="2021-03-11T20:46:34 IST" name="loginToApp" finished-at="2021-03-11T20:46:36 IST" duration-ms="2469" status="PASS">
+        <test-method is-config="true" signature="loginToApp(java.lang.String, java.lang.String)[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652]" started-at="2021-03-16T18:49:59 IST" name="loginToApp" finished-at="2021-03-16T18:50:01 IST" duration-ms="2604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,26 +49,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="LeadName()[pri:0, instance:com.crm.zohocrm.testscripts.TC003@353d0772]" started-at="2021-03-11T20:46:36 IST" name="LeadName" description="To Create A Lead and Verify in Lead Details Page" finished-at="2021-03-11T20:46:41 IST" duration-ms="4594" status="PASS">
+        <test-method signature="printCampaign()[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652]" started-at="2021-03-16T18:50:01 IST" name="printCampaign" description="To verify the details of campaign name in print preview page" finished-at="2021-03-16T18:50:06 IST" duration-ms="4431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LeadName -->
-        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:com.crm.zohocrm.testscripts.TC003@353d0772]" started-at="2021-03-11T20:46:41 IST" name="logoutFromApp" finished-at="2021-03-11T20:46:41 IST" duration-ms="250" status="PASS">
+        </test-method> <!-- printCampaign -->
+        <test-method is-config="true" signature="deleteCampaign()[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652]" started-at="2021-03-16T18:50:06 IST" name="deleteCampaign" finished-at="2021-03-16T18:50:07 IST" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCampaign -->
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652]" started-at="2021-03-16T18:50:07 IST" name="logoutFromApp" finished-at="2021-03-16T18:50:07 IST" duration-ms="634" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LeadName status=SUCCESS method=TC003.LeadName()[pri:0, instance:com.crm.zohocrm.testscripts.TC003@353d0772] output={null}]]]>
+                <![CDATA[[TestResult name=printCampaign status=SUCCESS method=TC006.printCampaign()[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.crm.zohocrm.testscripts.TC003@353d0772]" started-at="2021-03-11T20:46:41 IST" name="closeApp" finished-at="2021-03-11T20:46:42 IST" duration-ms="684" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.crm.zohocrm.testscripts.TC006@9225652]" started-at="2021-03-16T18:50:07 IST" name="closeApp" finished-at="2021-03-16T18:50:08 IST" duration-ms="707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.crm.zohocrm.testscripts.TC003 -->
+      </class> <!-- com.crm.zohocrm.testscripts.TC006 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

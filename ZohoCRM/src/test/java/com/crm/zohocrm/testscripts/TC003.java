@@ -5,28 +5,41 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.crm.zohocrm.generic.ExcelLibrary;
-import com.crm.zohocrm.pom.LeadsPage;
+import com.crm.zohocrm.pom.LeadDetailsPage;
+import com.crm.zohocrm.pom.LeadsListPage;
+import com.crm.zohocrm.pom.LeadsListPage;
 
 public class TC003 extends BaseTest {
 
-	LeadsPage leadspage;
+	LeadsListPage leadsListPage;
+	String lname;
 
 	@Test(description = "To Create A Lead and Verify in Lead Details Page")
 	public void LeadName() {
 
-		String cname = ExcelLibrary.getStringData1("L001", 1, 0);
-		String lname = ExcelLibrary.getStringData1("L001", 1, 1);
+		String navTabLink = ExcelLibrary.getStringData1("L001", 1, 0);
+		String companyName = ExcelLibrary.getStringData1("L001", 1, 1);
+		String lname = ExcelLibrary.getStringData1("L001", 1, 3);
 
-		leadspage = (LeadsPage) homePage.clickOnNavTabLink("Leads");
+		Assert.assertEquals(homePage.verifyTitle(), true, "Home Page Title is Not Correct");
 
-		leadspage.creatingLead(cname, lname);
+		leadsListPage = (LeadsListPage) homePage.clickOnNavTabLink(navTabLink);
 
-		homePage.clickOnNavTabLink("Leads");
+		Assert.assertEquals(leadsListPage.verifyAllLeadTitle(), true, "Lead page Title is not correct");
 
-		Assert.assertEquals(leadspage.verifyLeads(lname), true, "Lead name is not displayed");
-	
+		leadDetailsPage = (LeadDetailsPage) leadsListPage.creatingLead(companyName, lname);
+
+		homePage.clickOnNavTabLink(navTabLink);
+
+		Assert.assertEquals(leadsListPage.verifyLeads(lname), true, "Lead name is not displayed");
+
 	}
-	
+
+	@AfterMethod
+	public void deleteLeadname() {
+
+		Assert.assertEquals(leadsListPage.delLeadname(lname), true);
+
+	}
 
 }
-

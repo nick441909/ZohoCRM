@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.zohocrm.testscripts.TC004">
+      <class name="com.crm.zohocrm.testscripts.TC006">
         <methods>
           <include name="logoutFromApp"/>
-          <include name="campaignFunctional"/>
+          <include name="deleteCampaign"/>
           <include name="closeApp"/>
           <include name="loginToApp"/>
           <include name="openApp"/>
+          <include name="printCampaign"/>
         </methods>
-      </class> <!-- com.crm.zohocrm.testscripts.TC004 -->
+      </class> <!-- com.crm.zohocrm.testscripts.TC006 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

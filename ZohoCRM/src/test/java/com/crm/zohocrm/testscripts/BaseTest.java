@@ -19,13 +19,28 @@ import org.testng.annotations.Parameters;
 import com.crm.zohocrm.generic.IAutoConstants;
 import com.crm.zohocrm.generic.Utility;
 import com.crm.zohocrm.generic.WebActionUtil;
+import com.crm.zohocrm.pom.BasePage;
+import com.crm.zohocrm.pom.CampaignDetailsPage;
+import com.crm.zohocrm.pom.CampaignsListPage;
 import com.crm.zohocrm.pom.HomePage;
+import com.crm.zohocrm.pom.LeadDetailsPage;
+import com.crm.zohocrm.pom.LeadsListPage;
+import com.crm.zohocrm.pom.LeadsListPage;
 import com.crm.zohocrm.pom.LoginPage;
+import com.crm.zohocrm.pom.PotentialListPage;
+import com.crm.zohocrm.pom.PotentialsPage;
 
 public class BaseTest implements IAutoConstants {
+	
 	public WebDriver driver;
 	public WebActionUtil webActionUtil;
 	public HomePage homePage;
+	public CampaignDetailsPage campaignDetailsPage;
+	public CampaignsListPage campaignsListPage;
+	public LeadsListPage leadsListPage;
+	public PotentialListPage potentialListPage;
+	public LeadDetailsPage leadDetailsPage;
+	
 	@Parameters({"browser","appUrl","implicit","explicit"})
 	@BeforeClass(alwaysRun = true)
 	public void openApp(@Optional(DEFAULT_BROWSER)String browser,
@@ -50,6 +65,7 @@ public class BaseTest implements IAutoConstants {
 		driver.manage().timeouts().implicitlyWait(Long.parseLong(implict), TimeUnit.SECONDS);
 		driver.get(appUrl);
 		webActionUtil = new WebActionUtil(driver, Long.parseLong(explicit));
+		
 	}
 	
 	@Parameters({"user","pass"})
@@ -59,9 +75,8 @@ public class BaseTest implements IAutoConstants {
 		LoginPage loginPage = new LoginPage(driver, webActionUtil);
 		homePage = loginPage.signIn(user, pass);
 	}
-	
-	@AfterMethod(alwaysRun = true)
-	public void logoutFromApp(ITestResult result) {
+
+	@AfterMethod(alwaysRun = true)	public void logoutFromApp(ITestResult result) {
 		 if(result.getStatus()==ITestResult.FAILURE) {
 			System.out.println(Utility.getImage(driver, result.getName()));
 		}

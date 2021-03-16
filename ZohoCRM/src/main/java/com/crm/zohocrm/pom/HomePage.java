@@ -42,7 +42,7 @@ public class HomePage extends BasePage {
 		
 		switch(tabLinkName) {
 			case "Campaigns": return new CampaignsListPage(driver, webActionUtil);
-			case "Leads": return new LeadsPage(driver, webActionUtil);
+			case "Leads": return new LeadsListPage(driver, webActionUtil);
 			case "Contacts": return new ContactsPage(driver, webActionUtil);
 			case "Accounts": return new AccountsPage(driver, webActionUtil);
 			case "Potentials": return new PotentialsPage(driver, webActionUtil);
